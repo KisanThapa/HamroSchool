@@ -1,0 +1,1269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51D1332F-9435-491B-9816-9634BF118DC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HamroSchool</RootNamespace>
+    <AssemblyName>HamroSchool</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db_hamroschoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet49.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet52.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet53.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_hamroschoolDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_hamroschoolDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutDev.Designer.cs">
+      <DependentUpon>frmAboutDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutSchool.Designer.cs">
+      <DependentUpon>frmAboutSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookEntry.Designer.cs">
+      <DependentUpon>frmBookEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookRecords.Designer.cs">
+      <DependentUpon>frmBookRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassEntry.Designer.cs">
+      <DependentUpon>frmClassEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassFeeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassFeeEntry.Designer.cs">
+      <DependentUpon>frmClassFeeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassFeePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassFeePayments.Designer.cs">
+      <DependentUpon>frmClassFeePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartment.Designer.cs">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeDataGridView.Designer.cs">
+      <DependentUpon>frmEmployeeDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvent.Designer.cs">
+      <DependentUpon>frmEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeeCategory.Designer.cs">
+      <DependentUpon>frmFeeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeedback.Designer.cs">
+      <DependentUpon>frmFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeeRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeeRecords.Designer.cs">
+      <DependentUpon>frmFeeRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeeStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeeStudent.Designer.cs">
+      <DependentUpon>frmFeeStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgetPassword.Designer.cs">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeProfile.Designer.cs">
+      <DependentUpon>frmEmployeeProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchoolarship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchoolarship.Designer.cs">
+      <DependentUpon>frmSchoolarship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchoolEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSchoolEntry.Designer.cs">
+      <DependentUpon>frmSchoolEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSection.Designer.cs">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentDataGridView.Designer.cs">
+      <DependentUpon>frmStudentDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentProfile.Designer.cs">
+      <DependentUpon>frmStudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubject.Designer.cs">
+      <DependentUpon>frmSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserRegistration.Designer.cs">
+      <DependentUpon>frmUserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAboutDev.resx">
+      <DependentUpon>frmAboutDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutSchool.resx">
+      <DependentUpon>frmAboutSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookEntry.resx">
+      <DependentUpon>frmBookEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookRecords.resx">
+      <DependentUpon>frmBookRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassEntry.resx">
+      <DependentUpon>frmClassEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassFeeEntry.resx">
+      <DependentUpon>frmClassFeeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassFeePayments.resx">
+      <DependentUpon>frmClassFeePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartment.resx">
+      <DependentUpon>frmDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeDataGridView.resx">
+      <DependentUpon>frmEmployeeDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvent.resx">
+      <DependentUpon>frmEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeeCategory.resx">
+      <DependentUpon>frmFeeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeedback.resx">
+      <DependentUpon>frmFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeeRecords.resx">
+      <DependentUpon>frmFeeRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeeStudent.resx">
+      <DependentUpon>frmFeeStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgetPassword.resx">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeProfile.resx">
+      <DependentUpon>frmEmployeeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchoolarship.resx">
+      <DependentUpon>frmSchoolarship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSchoolEntry.resx">
+      <DependentUpon>frmSchoolEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSection.resx">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentDataGridView.resx">
+      <DependentUpon>frmStudentDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentProfile.resx">
+      <DependentUpon>frmStudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubject.resx">
+      <DependentUpon>frmSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserRegistration.resx">
+      <DependentUpon>frmUserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="db_hamroschoolDataSet.xsc">
+      <DependentUpon>db_hamroschoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet.xss">
+      <DependentUpon>db_hamroschoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet1.xsc">
+      <DependentUpon>db_hamroschoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet1.xss">
+      <DependentUpon>db_hamroschoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet10.xsc">
+      <DependentUpon>db_hamroschoolDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet10.xss">
+      <DependentUpon>db_hamroschoolDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet11.xsc">
+      <DependentUpon>db_hamroschoolDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet11.xss">
+      <DependentUpon>db_hamroschoolDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet12.xsc">
+      <DependentUpon>db_hamroschoolDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet12.xss">
+      <DependentUpon>db_hamroschoolDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet13.xsc">
+      <DependentUpon>db_hamroschoolDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet13.xss">
+      <DependentUpon>db_hamroschoolDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet14.xsc">
+      <DependentUpon>db_hamroschoolDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet14.xss">
+      <DependentUpon>db_hamroschoolDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet15.xsc">
+      <DependentUpon>db_hamroschoolDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet15.xss">
+      <DependentUpon>db_hamroschoolDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet16.xsc">
+      <DependentUpon>db_hamroschoolDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet16.xss">
+      <DependentUpon>db_hamroschoolDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet17.xsc">
+      <DependentUpon>db_hamroschoolDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet17.xss">
+      <DependentUpon>db_hamroschoolDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet18.xsc">
+      <DependentUpon>db_hamroschoolDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet18.xss">
+      <DependentUpon>db_hamroschoolDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet19.xsc">
+      <DependentUpon>db_hamroschoolDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet19.xss">
+      <DependentUpon>db_hamroschoolDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet2.xsc">
+      <DependentUpon>db_hamroschoolDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet2.xss">
+      <DependentUpon>db_hamroschoolDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet20.xsc">
+      <DependentUpon>db_hamroschoolDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet20.xss">
+      <DependentUpon>db_hamroschoolDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet21.xsc">
+      <DependentUpon>db_hamroschoolDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet21.xss">
+      <DependentUpon>db_hamroschoolDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet22.xsc">
+      <DependentUpon>db_hamroschoolDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet22.xss">
+      <DependentUpon>db_hamroschoolDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet23.xsc">
+      <DependentUpon>db_hamroschoolDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet23.xss">
+      <DependentUpon>db_hamroschoolDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet24.xsc">
+      <DependentUpon>db_hamroschoolDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet24.xss">
+      <DependentUpon>db_hamroschoolDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet25.xsc">
+      <DependentUpon>db_hamroschoolDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet25.xss">
+      <DependentUpon>db_hamroschoolDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet26.xsc">
+      <DependentUpon>db_hamroschoolDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet26.xss">
+      <DependentUpon>db_hamroschoolDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet27.xsc">
+      <DependentUpon>db_hamroschoolDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet27.xss">
+      <DependentUpon>db_hamroschoolDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet28.xsc">
+      <DependentUpon>db_hamroschoolDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet28.xss">
+      <DependentUpon>db_hamroschoolDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet29.xsc">
+      <DependentUpon>db_hamroschoolDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet29.xss">
+      <DependentUpon>db_hamroschoolDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet3.xsc">
+      <DependentUpon>db_hamroschoolDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet3.xss">
+      <DependentUpon>db_hamroschoolDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet30.xsc">
+      <DependentUpon>db_hamroschoolDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet30.xss">
+      <DependentUpon>db_hamroschoolDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet31.xsc">
+      <DependentUpon>db_hamroschoolDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet31.xss">
+      <DependentUpon>db_hamroschoolDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet32.xsc">
+      <DependentUpon>db_hamroschoolDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet32.xss">
+      <DependentUpon>db_hamroschoolDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet33.xsc">
+      <DependentUpon>db_hamroschoolDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet33.xss">
+      <DependentUpon>db_hamroschoolDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet34.xsc">
+      <DependentUpon>db_hamroschoolDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet34.xss">
+      <DependentUpon>db_hamroschoolDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet35.xsc">
+      <DependentUpon>db_hamroschoolDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet35.xss">
+      <DependentUpon>db_hamroschoolDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet36.xsc">
+      <DependentUpon>db_hamroschoolDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet36.xss">
+      <DependentUpon>db_hamroschoolDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet37.xsc">
+      <DependentUpon>db_hamroschoolDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet37.xss">
+      <DependentUpon>db_hamroschoolDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet38.xsc">
+      <DependentUpon>db_hamroschoolDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet38.xss">
+      <DependentUpon>db_hamroschoolDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet39.xsc">
+      <DependentUpon>db_hamroschoolDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet39.xss">
+      <DependentUpon>db_hamroschoolDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet4.xsc">
+      <DependentUpon>db_hamroschoolDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet4.xss">
+      <DependentUpon>db_hamroschoolDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet40.xsc">
+      <DependentUpon>db_hamroschoolDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet40.xss">
+      <DependentUpon>db_hamroschoolDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet41.xsc">
+      <DependentUpon>db_hamroschoolDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet41.xss">
+      <DependentUpon>db_hamroschoolDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet42.xsc">
+      <DependentUpon>db_hamroschoolDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet42.xss">
+      <DependentUpon>db_hamroschoolDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet43.xsc">
+      <DependentUpon>db_hamroschoolDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet43.xss">
+      <DependentUpon>db_hamroschoolDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet44.xsc">
+      <DependentUpon>db_hamroschoolDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet44.xss">
+      <DependentUpon>db_hamroschoolDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet45.xsc">
+      <DependentUpon>db_hamroschoolDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet45.xss">
+      <DependentUpon>db_hamroschoolDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet46.xsc">
+      <DependentUpon>db_hamroschoolDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet46.xss">
+      <DependentUpon>db_hamroschoolDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet47.xsc">
+      <DependentUpon>db_hamroschoolDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet47.xss">
+      <DependentUpon>db_hamroschoolDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet48.xsc">
+      <DependentUpon>db_hamroschoolDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet48.xss">
+      <DependentUpon>db_hamroschoolDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet49.xsc">
+      <DependentUpon>db_hamroschoolDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet49.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet49.xss">
+      <DependentUpon>db_hamroschoolDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet5.xsc">
+      <DependentUpon>db_hamroschoolDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet5.xss">
+      <DependentUpon>db_hamroschoolDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet50.xsc">
+      <DependentUpon>db_hamroschoolDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet50.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet50.xss">
+      <DependentUpon>db_hamroschoolDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet51.xsc">
+      <DependentUpon>db_hamroschoolDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet51.xss">
+      <DependentUpon>db_hamroschoolDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet52.xsc">
+      <DependentUpon>db_hamroschoolDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet52.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet52.xss">
+      <DependentUpon>db_hamroschoolDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet53.xsc">
+      <DependentUpon>db_hamroschoolDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet53.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet53.xss">
+      <DependentUpon>db_hamroschoolDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet6.xsc">
+      <DependentUpon>db_hamroschoolDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet6.xss">
+      <DependentUpon>db_hamroschoolDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet7.xsc">
+      <DependentUpon>db_hamroschoolDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet7.xss">
+      <DependentUpon>db_hamroschoolDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet8.xsc">
+      <DependentUpon>db_hamroschoolDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet8.xss">
+      <DependentUpon>db_hamroschoolDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet9.xsc">
+      <DependentUpon>db_hamroschoolDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="db_hamroschoolDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_hamroschoolDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_hamroschoolDataSet9.xss">
+      <DependentUpon>db_hamroschoolDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_filled-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notepad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task-manager1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS-Word-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MS-Word-2-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wordpad_icon_%28Windows_7%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guest_filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender_neutral_user_filled-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender_neutral_user-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\railroad_crossing_sign-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\school_crossing_patrol-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheap_2-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\average_2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegistrationIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\name-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20151218_170752.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20151218_1707521.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20160211_170350.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20151228_121441.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20151219_124110.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
